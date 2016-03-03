@@ -1,1 +1,135 @@
+<html>
 
+<head>
+	<title>Samatar's Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src= "sliding.js"></script>
+</head>
+
+<body>	
+	<div id="top-theme">
+		<h1 id="name"> Samatar Abukar</h1>
+		<p id="uni"> University of Waterloo, <span class="small-font">Computer Science </span> </p> 		
+		<div id="contact">
+			<a href="contact.html"><img src="mail-icon.png" width = "30px" height = "26px alt" = "Mail"></a>
+		</div>
+		<h2 id="email">Contact Information</h2>
+	</div>
+
+	<div class="div-slides" id="slider1">
+		<h1 id="bio">Bio:</h1>
+		<p id="bio-par">Hello and thank-you for visiting <br />  my website.</p>
+		<h2 id="hobs"> Hobbies: </h2>
+		<ul id="hobb-list">
+			<li>Basketball</li>
+			<li>Working out</li>
+			<li>Soccer</li>
+			<li>Reading</li>
+			<li>Coding</li>
+		</ul>
+	</div>
+
+	<div class="div-slides" id="slider2">
+		<h3 id="par">
+		    Here is a link to my github account containing relevant projects
+		I have created over the years!
+		<a id="git" href="https://github.com/SamatarUW"> My Github! </a>
+		</h3>
+	</div> 
+
+	<div class="div-slides" id="slider3">
+		<h1 id="working">Working Knowledge</h1>
+		<h1 id="basic">Basic Knowledge</h1>
+		<h2 class="Goodlangs" id="java">Java</h2> <h2 class="Goodlangs" id="python">Python</h2>
+		<h2 class="Goodlangs" id="scheme">Scheme/DrRacket</h2> 
+		<h2 class="Goodlangs" id="html">HTML</h2> <h2 class="Goodlangs" id="css">CSS</h2>
+		<h2 id="js">Java Script</h2> <h2 id="jq">Jquery</h2>
+
+		<div class="imgs" id="java-img">
+			<img src="java.png" width = "30px" height="30px alt" = jav>
+		</div>
+
+		<div class="imgs" id="python-img">
+			<img src="python.png" width = "30px" height="30px alt" = pyt>
+		</div>
+
+		<div class="imgs" id="html-img">
+			<img src="html.png" width = "30px" height="30px alt" = htm>
+		</div>
+
+		<div class="imgs" id="css-img">
+			<img src="css.png" width = "30px" height="30px alt" = css>
+		</div>
+
+		<div class="imgs" id="scheme-img">
+			<img src="scheme.svg" width = "30px" height="30px alt" = sch>
+		</div>
+
+		<div class="imgs" id="js-img">
+			<img src="js.png" width = "30px" height="30px alt" = jscript>
+		</div>
+
+		<div class="imgs" id="jq-img">
+			<img src="jq.gif" width = "30px" height="30px alt" = jquery>
+		</div>
+	</div>
+
+	<a href="#" id="toggle1">
+		<div class="sliders" id="rectangle1" data-content="shown"> 
+			<div id="about">
+				<img src="about-me.png" width = "50px" height="50px alt" = "about-me">
+			</div>
+			<h3 class="slideTitles" id="pros"> PROFILE </h3> </div>	
+		</div>
+	</a>
+
+	<a href="#" id="toggle2">
+		<div class="sliders" id="rectangle2">
+			<h3 class="slideTitles" id="projs"> PROJECTS </h3> 
+			<div id="projects">
+				<img src="projects.png" width = "50px" height="50px alt" = "proj">
+			</div>
+		</div>	
+	</a>
+
+	<a href="#" id="toggle3">
+		<div class="sliders" id="rectangle3"> 
+			<div id="skills">
+				<img src="skills.png" width = "50px" height="50px alt" = "skill">
+			</div>
+			<h3 class="slideTitles" id="skls"> SKILLS </h3>
+		</div>
+	</a>
+
+		
+
+	<script type="text/javascript">
+		$(function() {
+     		$("a#toggle1").click(function() {
+         		$("#slider1").slideToggle("slow");
+         		return false;
+     		}); 
+     		$("a#toggle2").click(function() {
+         		$("#slider2").slideToggle("slow");
+         		return false;
+     		}); 
+     		$("a#toggle3").click(function() {
+         		$("#slider3").slideToggle("slow");
+         		return false;
+     		});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$('html, body').animate({
+            scrollTop: $(div-slides+"-scroll").offset().top
+        }, 200);
+    });
+	</script>
+
+</body>
+
+
+
+</html>
