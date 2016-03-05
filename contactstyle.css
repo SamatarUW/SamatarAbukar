@@ -1,0 +1,54 @@
+h1 {
+	color:#000000;
+	font:bold 45px "Comic Sans FS";
+	position:absolute;
+	top: 28%;
+	left: 37%;
+}
+body {
+	background-color: #87cefa;
+	background-image: url("white-background.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: 100% 90%;
+}
+h2 {
+	color:#000000;
+	font:bold 20px "Times New Roman";
+	position:absolute;
+	top: 40%;
+	left: 42%;
+}
+h3 {
+	color:#000000;
+	font:bold 20px "Times New Roman";
+	position:absolute;
+	top: 50%;
+	left: 42%;
+}
+div.box {
+	width: 200px;
+	border: 1px solid black;
+	background: orange;
+}
+#mobile{
+	position:absolute;
+	left:37%;
+	top:52%;
+}
+#mail{
+	position:absolute;
+	left:37%;
+	top:42%;
+}
+#resume{
+	position:absolute;
+	left:36.8%;
+	top:62%;
+}
+a {
+	position:absolute;
+	font:bold 20px "Times New Roman";
+	left:42%;
+	top:63%;
+}
